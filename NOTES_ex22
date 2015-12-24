@@ -1,0 +1,57 @@
+NOTES examples 1-21
+
+% percentage sign in Python is referred to as a Modulo operator
+
+%s, %d, %u, %f denote formatted objects standing for %s(String), %d(Data), %u(Unassigned decimal), %f(Floating point number) which creates a decimaled number and is handled mathmetically different during operation and functions, ie. 1 is different than 1.0
+replacing strings or variable data into print strings and then recalled after with definitions
+Conversion	Meaning
+d	          Signed integer decimal.
+i	          Signed integer decimal.
+o	          Unsigned octal.
+u	          Unsigned decimal.
+x	          Unsigned hexadecimal (lowercase).
+X	          Unsigned hexadecimal (uppercase).
+e	          Floating point exponential format (lowercase).
+E	          Floating point exponential format (uppercase).
+f	          Floating point decimal format.
+F	          Floating point decimal format.
+g	          Same as "e" if exponent is greater than -4 or less than precision, "f" otherwise.
+G	          Same as "E" if exponent is greater than -4 or less than precision, "F" otherwise.
+c	          Single character (accepts integer or single character string).
+r	          String (converts any python object using repr()).
+s	          String (converts any python object using str()).
+%	          No argument is converted, results in a "%" character in the result.
+
+ex:
+  print "Hey my name is %s, I am %d years old and my favorite number is %d" % ("Jonathan", 25, 69)
+
+which will return:
+
+Hey my name is Jonathan, I am 25 years old and my favorite number is 69
+
+Or you can preset variables and call them into the string the same way, instead of defining the input after the string, you can set the data as variables and then call the variable names in place post-string.
+
+ex:
+  #set variables first
+  name = Jonathan
+  age = 25
+  fnum = 69
+
+  print "Hey my name is %s, I am %f years old and my favorite number is %f" % (name, age, fnum)
+
+Another way to write it is the "new way" which uses {} brackets in place of the formatted variables
+
+ex:
+  print "Hey my name is {}, I am {} years old and my favorite number is {}".format(name, age, fnum)
+
+What is useful about the new way is that using brackets, you can enter field numbers inside (just like you would in an array) NOTE: just like arrays, field numbers start with {0}
+
+ex:
+  print "Hey my name is {2}, I am {0} years old and my favorite number is {1}".format(name, age, fnum)
+
+which will give you the output of:
+
+  Hey my name is 69, I am Jonathan years old and my favorite number is 25
+
+
+Reading and Working with Files

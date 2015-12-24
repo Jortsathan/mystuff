@@ -1,0 +1,2 @@
+this is the file 'from.txt' for copying into a new 'to.txt' file
+ this is a new test

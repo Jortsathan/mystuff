@@ -1,0 +1,1 @@
+Here is some new text, I wonder if the new line command will work from here, or if the text is saved via the %r module. \n If all has worked correctly, it should have this on a \n new line!!!!!!!!
