@@ -3,24 +3,25 @@ NOTES examples 1-21
 % percentage sign in Python is referred to as a Modulo operator
 
 %s, %d, %u, %f denote formatted objects standing for %s(String), %d(Data), %u(Unassigned decimal), %f(Floating point number) which creates a decimaled number and is handled mathmetically different during operation and functions, ie. 1 is different than 1.0
-replacing strings or variable data into print strings and then recalled after with definitions
-Conversion	Meaning
-d	          Signed integer decimal.
-i	          Signed integer decimal.
-o	          Unsigned octal.
-u	          Unsigned decimal.
-x	          Unsigned hexadecimal (lowercase).
-X	          Unsigned hexadecimal (uppercase).
-e	          Floating point exponential format (lowercase).
-E	          Floating point exponential format (uppercase).
-f	          Floating point decimal format.
-F	          Floating point decimal format.
-g	          Same as "e" if exponent is greater than -4 or less than precision, "f" otherwise.
-G	          Same as "E" if exponent is greater than -4 or less than precision, "F" otherwise.
-c	          Single character (accepts integer or single character string).
-r	          String (converts any python object using repr()).
-s	          String (converts any python object using str()).
-%	          No argument is converted, results in a "%" character in the result.
+replacing strings or variable data into print strings and then recalled after with definitions:
+
+Conversion	  								Meaning
+	d	          Signed integer decimal.
+	i	          Signed integer decimal.
+	o	          Unsigned octal.
+	u	          Unsigned decimal.
+	x	          Unsigned hexadecimal (lowercase).
+	X	          Unsigned hexadecimal (uppercase).
+	e	          Floating point exponential format (lowercase).
+	E	          Floating point exponential format (uppercase).
+	f	          Floating point decimal format.
+	F	          Floating point decimal format.
+	g	          Same as "e" if exponent is greater than -4 or less than precision, "f" otherwise.
+	G	          Same as "E" if exponent is greater than -4 or less than precision, "F" otherwise.
+	c	          Single character (accepts integer or single character string).
+	r	          String (converts any python object using repr()).
+	s	          String (converts any python object using str()).
+	%	          No argument is converted, results in a "%" character in the result.
 
 ex:
   print "Hey my name is %s, I am %d years old and my favorite number is %d" % ("Jonathan", 25, 69)
